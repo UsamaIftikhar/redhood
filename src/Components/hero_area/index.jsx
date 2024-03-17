@@ -28,7 +28,7 @@ export default function Index() {
                    <Slider {...settings}> 
                         <SliderItem
                             title="We Are Creative "
-                            sub_title="CodeMindsX Agency"
+                            sub_title="RedhoodTech Agency"
                             heading="We Are Professional Freelance Web Designer"
                             description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
                             url="/contact"
@@ -36,7 +36,7 @@ export default function Index() {
                         />
                         <SliderItem
                             title="We Are Creative "
-                            sub_title="CodeMindsX Agency"
+                            sub_title="RedhoodTech Agency"
                             heading="We Are Professional Freelance Web Designer"
                             description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
                             url="/contact"
@@ -44,7 +44,7 @@ export default function Index() {
                         />
                         <SliderItem
                             title="We Are Creative "
-                            sub_title="CodeMindsX Agency"
+                            sub_title="RedhoodTech Agency"
                             heading="We Are Professional Freelance Web Designer"
                             description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
                             url="/contact"

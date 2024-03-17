@@ -26,7 +26,7 @@ export default function HireUs() {
                             </div>
                             <div className="award_info">
                                 <img src={signImg} className="img-fluid" alt="signin"/>
-                                <h4>CodeMindsX Team</h4>
+                                <h4>RedhoodTech Team</h4>
                                 <h5>Best Award 2020</h5>
                             </div>
                         </div>

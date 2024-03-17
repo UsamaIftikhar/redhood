@@ -72,7 +72,7 @@ export default function Index() {
                                                 <i><FaEnvelope/></i>
                                             </div>
                                             <div className="info">
-                                                <p><a href="mailto:info@deneb.com">info@codemindsx.com</a></p>
+                                                <p><a href="mailto:info@deneb.com">info@RedhoodTech.com</a></p>
                                             </div>
                                         </div>
                                         <div className="single_info">
@@ -94,7 +94,7 @@ export default function Index() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="copyright_text">
-                                    <p>Copyright &copy; 2020 <span>CodeMindsX</span>. All rights reserved.</p>
+                                    <p>Copyright &copy; 2020 <span>RedhoodTech</span>. All rights reserved.</p>
                                 </div>
                             </div>
                         </div>
