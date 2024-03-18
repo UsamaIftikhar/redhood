@@ -64,7 +64,7 @@ export default function Index() {
                                                 <i><FaPhoneAlt/></i>
                                             </div>
                                             <div className="info">
-                                                <p><a href="tel:+919246147999">+92 300-422-9755</a></p>
+                                                <p><a href="tel:+919246147999">+92 335 6667375</a></p>
                                             </div>
                                         </div>
                                         <div className="single_info">
@@ -72,7 +72,7 @@ export default function Index() {
                                                 <i><FaEnvelope/></i>
                                             </div>
                                             <div className="info">
-                                                <p><a href="mailto:info@deneb.com">info@RedhoodTech.com</a></p>
+                                                <p><a href="mailto:info@deneb.com">info@Redhood-tech.com</a></p>
                                             </div>
                                         </div>
                                         <div className="single_info">
