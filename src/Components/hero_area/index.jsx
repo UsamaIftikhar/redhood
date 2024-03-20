@@ -6,6 +6,8 @@ import "./hero_area.scss";
 import shapeImg from "../../images/shape/shape_1.png";
 import SliderItem from "../../SingleFeatures/slider_item";
 import slider_01_img from "../../images/banner_1.png";
+import slider_01_img_fixed from "../../images/banner_1_fixed.png";
+import slider_01_img_moving from "../../images/banner_1_moving.png";
 import slider_02_img from "../../images/banner_02.png";
 import slider_03_img from "../../images/banner_03.png";
 
@@ -27,12 +29,14 @@ export default function Index() {
                 <div className="hero_slider">
                    <Slider {...settings}> 
                         <SliderItem
-                            title="We Are Creative "
+                            title="We Are Creative"
                             sub_title="RedhoodTech Agency"
                             heading="We Are Professional Freelance Web Designer"
                             description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
                             url="/contact"
                             img={slider_01_img}
+                            fixedImg={slider_01_img_fixed}
+                            movingImg={slider_01_img_moving}
                         />
                         <SliderItem
                             title="We Are Creative "

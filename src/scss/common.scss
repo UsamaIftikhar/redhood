@@ -105,9 +105,11 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition:.5s;
+	margin-left: 3px;
 	&:hover,&:focus{
 		color: $white;
 		box-shadow: 2.5px 4.33px 15px 0px rgba(232, 48, 56, 0.4);
+		transform: scale3d(1.05, 1.05, 1.05);
 	}
 }
 .link_btn{
