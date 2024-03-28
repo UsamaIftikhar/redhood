@@ -19,15 +19,19 @@ export default function Index() {
                     <div className="col-lg-5">
                         <div className="deneb_img_box wow fadeInLeft">
                             <img src={aboutImg} className="img-fluid" alt="about" />
+                            <div className='d-flex flex-column align-items-center mt-1'>
+                                <h3>Usama Iftikhar</h3>
+                                <p>Chief Executive Officer (CEO)</p>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <div className="deneb_content_box wow fadeInRight" style={{marginTop: '50px'}}>
+                        <div className="deneb_content_box wow fadeInRight" style={{ marginTop: '50px' }}>
                             <h2>Our Vision</h2>
                             <p>
                                 At RedHoodTech, we know today's digital problems are always changing. With our 5+ years of experience, we're here to tackle them. Our goal? To make IT solutions smarter, more efficient, and enhanced by AI. We're leading the way in digital change, offering flexible services worldwide. Our team is ready to bring innovation to life, making tech work for you.
                             </p>
-                            <div style={{display:'flex'}} className="award_box">
+                            <div style={{ display: 'flex' }} className="award_box">
                                 <div className="award_img">
                                     <img src={awardImg} alt="award" />
                                 </div>
