@@ -21,7 +21,7 @@ export default function Index() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true, // Enable autoplay
-        autoplaySpeed: 7000,
+        autoplaySpeed: 9000,
     }
     return (
         <section className="deneb_banner carousel-style banner_v1">
