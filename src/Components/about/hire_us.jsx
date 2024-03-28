@@ -15,7 +15,7 @@ export default function HireUs() {
                     </div>
                     <div className="col-lg-7">
                         <div className="deneb_content_box">
-                            <h2>Why You Hire Us?</h2>
+                            <h2>Why You Work with us?</h2>
                             <p>
                               Employers typically look for software engineers who have a strong technical background, including a solid understanding of programming languages, data structures, algorithms, and software design principles. They want individuals who can write clean, efficient, and maintainable code. Employers also look for individuals who can work effectively in a team, communicate well. We have a team that have above qualities
                             </p>

@@ -34,14 +34,14 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
+              <Route exact path="/portfolios">
+                <Portfolios />
+              </Route>
               <Route exact path="/about">
                 <About />
               </Route>
               <Route exact path="/services">
                 <Services />
-              </Route>
-              <Route exact path="/portfolios">
-                <Portfolios />
               </Route>
               <Route exact path="/contact">
                 <Contact />

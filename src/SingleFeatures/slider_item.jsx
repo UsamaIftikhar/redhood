@@ -24,10 +24,17 @@ export default function SliderItem(props) {
                     <div className="banner_content wow fadeInLeft">
                         <h1 style={{ whiteSpace: 'nowrap' }}>
                             {titleText}
-                            {!titleTypingComplete && <span className="blinking-cursor black-color">{typingSymbol}</span>}
+                            {!titleTypingComplete && titleText && <span className="blinking-cursor black-color">{typingSymbol}</span>}
                         </h1>
-                        {titleTypingComplete && <h1>
-                            <span>{subTitleText}</span>
+                        {
+                            sub_title === 'Why RedhoodTech?' && <h1 ><p>Why&nbsp;</p><span>Redhood<span>Tech?</span></span></h1>
+                        }
+                        {
+                            sub_title === 'first_slider' && <h1><span style={{ whiteSpace: 'nowrap' }}>Dominate&nbsp;<span>Your&nbsp;</span><br />Digital Space&nbsp;<span>
+                                with<br /> Cutting-Edge <br /> Web Solutions!</span></span></h1>
+                        }
+                        {titleTypingComplete && sub_title !== 'Why RedhoodTech?' && sub_title !== 'first_slider' && <h1>
+                            <span><span>Our&nbsp;</span>Mission</span>
                             {!subTitleTypingComplete && <span className="blinking-cursor">{typingSymbol}</span>}
                         </h1>}
                         {subTitleTypingComplete && (
@@ -44,7 +51,7 @@ export default function SliderItem(props) {
                                     <h5>{heading}</h5>
                                     <p>{description}</p>
                                 </motion.div>
-                                <Link to={url} className="deneb_btn">Hire Us</Link>
+                                <Link to={url} className="deneb_btn">Work with us</Link>
                             </div>
                         )}
                     </div>

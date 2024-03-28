@@ -11,8 +11,14 @@ export const useTypewriter = (text, shouldStart, speed = 100) => {
     if (shouldStart) {
       timer = setTimeout(() => {
         if (index < text.length) {
-          setDisplayText(prevText => prevText + text[index]);
-          setIndex(prevIndex => prevIndex + 1);
+          if (text[index] === '<') {
+            let tagEndIndex = text.indexOf('>', index);
+            setDisplayText(prevText => prevText + text.substring(index, tagEndIndex + 1));
+            setIndex(tagEndIndex + 1);
+          } else {
+            setDisplayText(prevText => prevText + text[index]);
+            setIndex(prevIndex => prevIndex + 1);
+          }
         } else {
           setTypingComplete(true);
         }

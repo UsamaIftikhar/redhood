@@ -1,10 +1,11 @@
 import React from 'react'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./hero_area.scss";
 import shapeImg from "../../images/shape/shape_1.png";
 import SliderItem from "../../SingleFeatures/slider_item";
+import FirstSlider from "../../SingleFeatures/first_slider";
 import slider_01_img from "../../images/banner_1.png";
 import slider_01_img_fixed from "../../images/banner_1_fixed.png";
 import slider_01_img_moving from "../../images/banner_1_moving.png";
@@ -18,7 +19,9 @@ export default function Index() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 7000,
     }
     return (
         <section className="deneb_banner carousel-style banner_v1">
@@ -27,32 +30,33 @@ export default function Index() {
             </div>
             <div className="container">
                 <div className="hero_slider">
-                   <Slider {...settings}> 
-                        <SliderItem
-                            title="We Are Creative"
-                            sub_title="RedhoodTech Agency"
-                            heading="We Are Professional Freelance Web Designer"
-                            description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
+                    <Slider {...settings}>
+                        <FirstSlider
+                            title=""
+                            sub_title="first_slider"
+                            heading=""
+                            description="At RedHood Tech, we solve client problems creatively, empowering them with tailored solutions. Our mission: deliver innovative results."
                             url="/contact"
-                            img={slider_01_img}
                             fixedImg={slider_01_img_fixed}
                             movingImg={slider_01_img_moving}
                         />
                         <SliderItem
-                            title="We Are Creative "
-                            sub_title="RedhoodTech Agency"
-                            heading="We Are Professional Freelance Web Designer"
-                            description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
+                            title=""
+                            sub_title="Why RedhoodTech?"
+                            heading="Struggling with your online presence?"
+                            description="At RedHood Tech, we understand the frustration of dealing with outdated or ineffective digital solutions.  We offer expert solutions to elevate your brand and drive conversions."
                             url="/contact"
-                            img={slider_02_img}
+                            fixedImg={slider_02_img}
+                            movingImg={slider_01_img_moving}
                         />
                         <SliderItem
-                            title="We Are Creative "
-                            sub_title="RedhoodTech Agency"
-                            heading="We Are Professional Freelance Web Designer"
-                            description="Our mission is to join you in your initiatives and convert your exciting ideas into reality. Based in Pakistan with the focus of empowering you with power solutions using modern techniques."
+                            title=""
+                            sub_title="Our Mission"
+                            heading="By choosing Redhoodtech, you're embracing our vision"
+                            description="At RedHoodTech, we know today's digital problems are always changing. With our 5+ years of experience, we're here to tackle them. Our goal? To make IT solutions smarter, more efficient, and enhanced by AI. We're leading the way in digital change, offering flexible services worldwide. Our team is ready to bring innovation to life, making tech work for you."
                             url="/contact"
-                            img={slider_03_img}
+                            fixedImg={slider_03_img}
+                            movingImg={slider_01_img_moving}
                         />
                     </Slider>
                 </div>

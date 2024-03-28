@@ -12,7 +12,7 @@ export default function Index() {
                 <div className="row align-items-center">
                     <div className="col-lg-6  wow fadeInLeft">
                         <div className="section_title">
-                            <h2>Over 15+ Completed work & Still Counting</h2>
+                            <h2>Over 200+ Completed work & Still Counting</h2>
                         </div>
                         <div className="deneb_content_box">
                             <p>
@@ -31,7 +31,7 @@ export default function Index() {
                                         alt=""
                                     />
                                 </div>
-                                <h3>10+</h3>
+                                <h3>200+</h3>
                                 <p>Projects Done</p>
                             </div>
                             <div className="single_achivment wow fadeInUp" data-wow-delay=".2s">

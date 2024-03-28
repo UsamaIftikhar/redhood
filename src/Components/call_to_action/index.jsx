@@ -18,7 +18,7 @@ export default function Index() {
                         </div>
                         <div className="col-lg-5">
                             <div className="button_box">
-                                <Link className="deneb_btn" onClick={scrollPageTop} to="/contact">Hire Us</Link>
+                                <Link className="deneb_btn" onClick={scrollPageTop} to="/contact">Work with us</Link>
                             </div>
                         </div>
                     </div>

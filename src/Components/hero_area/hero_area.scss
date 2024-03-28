@@ -25,6 +25,14 @@
 					span{
 						font-weight: bold;
 						color: $theme_color;
+						span{
+							font-weight: bold;
+							color:black;
+						}
+					}
+					p {
+						font-weight: bold;
+						margin-bottom: 0px;
 					}
 				}
 				h5{
