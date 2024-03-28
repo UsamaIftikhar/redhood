@@ -8,6 +8,7 @@ export default function SliderItem(props) {
     const [startSubTitleTyping, setStartSubTitleTyping] = useState(false);
     const { displayText: titleText, typingComplete: titleTypingComplete } = useTypewriter(title, true);
     const { displayText: subTitleText, typingComplete: subTitleTypingComplete } = useTypewriter(sub_title, startSubTitleTyping);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
 
     useEffect(() => {
         if (titleTypingComplete) {
@@ -15,13 +16,24 @@ export default function SliderItem(props) {
         }
     }, [titleTypingComplete]);
 
+    useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth < 768);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup function to remove the event listener when component unmounts
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const typingSymbol = '|';
 
     return (
         <div className="signle_slider">
             <div className="row align-items-center">
                 <div className="col-lg-5">
-                    <div className="banner_content wow fadeInLeft">
+                    <div className={isMobile ? "banner_content wow fadeInLeft ml-1" : "banner_content wow fadeInLeft"}>
                         <h1 style={{ whiteSpace: 'nowrap' }}>
                             {titleText}
                             {!titleTypingComplete && titleText && <span className="blinking-cursor black-color">{typingSymbol}</span>}
@@ -29,11 +41,7 @@ export default function SliderItem(props) {
                         {
                             sub_title === 'Why RedhoodTech?' && <h1 ><p>Why&nbsp;</p><span>Redhood<span>Tech?</span></span></h1>
                         }
-                        {
-                            sub_title === 'first_slider' && <h1><span style={{ whiteSpace: 'nowrap' }}>Dominate&nbsp;<span>Your&nbsp;</span><br />Digital Space&nbsp;<span>
-                                with<br /> Cutting-Edge <br /> Web Solutions!</span></span></h1>
-                        }
-                        {titleTypingComplete && sub_title !== 'Why RedhoodTech?' && sub_title !== 'first_slider' && <h1>
+                        {titleTypingComplete && sub_title !== 'Why RedhoodTech?' && <h1>
                             <span><span>Our&nbsp;</span>Mission</span>
                             {!subTitleTypingComplete && <span className="blinking-cursor">{typingSymbol}</span>}
                         </h1>}

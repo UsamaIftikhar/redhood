@@ -10,6 +10,7 @@ export default function FirstSlider(props) {
     const [startWithTyping, setStartWithTyping] = useState(false);
     const [startCuttingEdgeTyping, setStartCuttingEdgeTyping] = useState(false);
     const [startWebSolutionsTyping, setStartWebSolutionsTyping] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
 
     const { displayText: dominate, typingComplete: dominateTypingComplete } = useTypewriter('Dominate', true);
     const { displayText: your, typingComplete: yourTypingComplete } = useTypewriter('Your', startYourTyping);
@@ -36,13 +37,24 @@ export default function FirstSlider(props) {
         }
     }, [dominateTypingComplete, yourTypingComplete, digitalSpaceTypingComplete, withTypingComplete, cuttingEdgeTypingComplete, webSolutionsTypingComplete]);
 
+    useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth < 768);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup function to remove the event listener when component unmounts
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const typingSymbol = '|';
 
     return (
         <div className="signle_slider">
             <div className="row align-items-center">
                 <div className="col-lg-5">
-                    <div className="banner_content wow fadeInLeft">
+                    <div className={isMobile ? "banner_content wow fadeInLeft ml-1" : "banner_content wow fadeInLeft"}>
                         {
                             sub_title === 'first_slider' &&
                             <h1>
@@ -71,8 +83,8 @@ export default function FirstSlider(props) {
                                     <h5>{heading}</h5>
                                     <p>{description}</p>
                                 </motion.div>
-                                <Link to={url} style={{ minWidth: '300px' }} className="deneb_btn ml-2 mr-2 mb-2">Schedule free 1:1 audit call</Link>
-                                <Link to='/portfolios' className="deneb_btn">See our work</Link>
+                                <Link to={url} style={{ minWidth: '300px' }} className={isMobile ? "deneb_btn mb-2 ml-1" : "deneb_btn ml-2 mr-2 mb-2"}>Schedule free 1:1 audit call</Link>
+                                <Link to='/portfolios' className={isMobile ? "deneb_btn ml-1" : "deneb_btn"}>See our work</Link>
                             </div>
                         }
                     </div>
