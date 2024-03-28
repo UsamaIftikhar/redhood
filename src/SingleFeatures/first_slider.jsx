@@ -71,7 +71,7 @@ export default function FirstSlider(props) {
                                     <h5>{heading}</h5>
                                     <p>{description}</p>
                                 </motion.div>
-                                <Link to={url} style={{minWidth: '300px'}} className="deneb_btn ml-2 mr-2">Schedule free 1:1 audit call</Link>
+                                <Link to={url} style={{ minWidth: '300px' }} className="deneb_btn ml-2 mr-2 mb-2">Schedule free 1:1 audit call</Link>
                                 <Link to='/portfolios' className="deneb_btn">See our work</Link>
                             </div>
                         }
