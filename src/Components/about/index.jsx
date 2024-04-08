@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "./about.scss";
 import awardImg from "../../images/award.png";
 import signImg from "../../images/sign_2.png";
+import linkedinLogo from '../../images/linkedin.png'
+import emailLogo from '../../images/email.png'
 
 export default function Index() {
     const scrollToTop = (e) => {
@@ -12,6 +14,10 @@ export default function Index() {
             behavior: "smooth"
         });
     }
+
+    const handleLinkedInClick = () => {
+        window.open('https://www.linkedin.com/in/usama-iftikhar-ahmad/', '_blank'); // Open the LinkedIn profile in a new tab
+    };
     return (
         <section className="deneb_about about_v1">
             <div className="container">
@@ -20,8 +26,15 @@ export default function Index() {
                         <div className="deneb_img_box wow fadeInLeft">
                             <img src={aboutImg} className="img-fluid" alt="about" />
                             <div className='d-flex flex-column align-items-center mt-1'>
-                                <h3>Usama Iftikhar</h3>
+                                <div className='d-flex align-items-center'>
+                                    <h3>Usama Iftikhar</h3>
+                                </div>
                                 <p>Chief Executive Officer (CEO)</p>
+                                {/* <div className='d-flex'>
+                                    <img width={25} height={25} src={linkedinLogo} className='mr-2' style={{ cursor: 'pointer' }} onClick={handleLinkedInClick} />
+                                    <img width={30} height={25} src={emailLogo} className='mr-2' style={{ cursor: 'pointer' }} onClick={handleLinkedInClick} />
+
+                                </div> */}
                             </div>
                         </div>
                     </div>

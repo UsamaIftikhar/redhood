@@ -23,6 +23,8 @@ export default function Index() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000,
         slidesToScroll: 1,
         responsive: [
             {

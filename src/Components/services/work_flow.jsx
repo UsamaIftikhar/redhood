@@ -34,7 +34,7 @@ export default function WorkFlow() {
                                     </div>
                                     <div className="info">
                                         <h3>Analysis</h3>
-                                        <p>First of all we analysis that what is Requirements of our client and what he Want.</p>
+                                        <p>First of all we analysis that what is Requirements of our client and what they want.</p>
                                     </div>
                                 </div>
                             </div>

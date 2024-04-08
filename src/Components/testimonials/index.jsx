@@ -8,14 +8,15 @@ import people_img_04 from "../../images/4.jpeg";
 import people_img_05 from "../../images/5.png";
 import people_img_06 from "../../images/6.png";
 import people_img_07 from "../../images/7.png";
-import testimonial_img_01 from "../../images/testimonial_1.png";
-import testimonial_img_02 from "../../images/testimonial_2.jpeg";
-import testimonial_img_03 from "../../images/testimonial_3.jpeg";
+import testimonial_img_01 from "../../images/testimonial_1.jpeg";
+import testimonial_img_02 from "../../images/testimonial_2.png";
+import testimonial_img_001 from "../../images/testimonial_1.png";
 import testimonial_img_04 from "../../images/testimonial_4.jpeg";
 import testimonial_img_05 from "../../images/testimonial_5.jpeg";
 import testimonial_img_06 from "../../images/testimonial_6.jpeg";
 import testimonial_img_07 from "../../images/testimonial_7.jpeg";
 import testimonial_img_08 from "../../images/testimonial_8.jpeg";
+import testimonial_img_09 from "../../images/testimonial_img_09.png";
 import "slick-carousel/slick/slick.css";
 import "./testimonials.scss";
 import SectionTitle from "../section_title";
@@ -29,7 +30,9 @@ export default function Index() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
     };
     return (
         <section className="deneb_testimonial testimonial_v1">
@@ -47,10 +50,10 @@ export default function Index() {
                         <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_01} className="img-fluid" alt="people" />
                     </div>
                     <div className="single_img">
-                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '50%'}} src={testimonial_img_02} className="img-fluid" alt="people" />
+                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '50%'}} src={testimonial_img_09} className="img-fluid" alt="people" />
                     </div>
                     <div className="single_img">
-                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_03} className="img-fluid" alt="prople" />
+                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_02} className="img-fluid" alt="prople" />
                     </div>
                     <div className="single_img">
                         <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_08} className="img-fluid" alt="prople" />
@@ -58,7 +61,7 @@ export default function Index() {
                 </div>
                 <div className="row2">
                     <div className="single_img">
-                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={people_img_04} className="img-fluid" alt="prople" />
+                        <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_001} className="img-fluid" alt="prople" />
                     </div>
                     <div className="single_img">
                         <img style={{ height: '100px', width: '100px', backgroundColor: 'red', borderRadius: '100%'}} src={testimonial_img_05} className="img-fluid" alt="prople" />
@@ -72,56 +75,25 @@ export default function Index() {
                 </div>
                 <div className="testimonial_slide carousel-style">
                     <Slider {...settings}> 
+                       
                         <TestimonialItem
                             img={testimonial_img_01}
-                            name="Usama Iftikhar"
-                            designation="CEO & Co-Founder"
-                            text="Skills: Full stack Developer"
+                            name="Danyal Ahmad"
+                            designation="Senior Full stack developer"
+                            text="Skills: React Native, MERN Stack"
 
                         />
-                        <TestimonialItem
-                            img={testimonial_img_03}
-                            name="Rizwan Malik"
-                            designation="CEO & Co-Founder"
-                            text="Skills: DevOps Engineer"
-
-                        />
-                        <TestimonialItem
+                         <TestimonialItem
                             img={testimonial_img_02}
                             name="Rizwan Ali"
-                            designation="Project Manger"
-                            text="Skills: Full Stack Developer"
-                        />
-                        <TestimonialItem
-                            img={testimonial_img_04}
-                            name="Karamat Shah"
-                            designation="Software Enginer"
-                            text="Skills: MERN Stack Developer"
+                            designation="MERN Stack Developer"
+                            text="Skills: React Native developer"
 
                         />
-                        <TestimonialItem
-                            img={testimonial_img_05}
-                            name="Saad"
-                            designation="Web Designer"
-                            text="Skills: UI/UX Designer"
-                        />
-                        <TestimonialItem
-                            img={testimonial_img_06}
-                            name="Rashid"
-                            designation="Software Enginer"
-                            text="Skills: Web Servers (Apache, Nginx), Web Protocols, Linux / Windows Server Management, Wordpress, Joomla, Magento, AVS, Custom CMSs, PHP, Javascript, Data Processing, Regular Expressions, among others."
-                        />
-                        <TestimonialItem
-                            img={testimonial_img_07}
-                            name="Usama"
-                            designation="Software Enginer"
-                            text="Skills: WordPress/VueJs Developer"
-                        />
-                        <TestimonialItem
-                            img={testimonial_img_08}
-                            name="Mahboob"
-                            designation="Software Enginer"
-                            text="Skills: React Block Chain Developer"
+                         <TestimonialItem
+                            img={testimonial_img_09}
+                            name="Hamza Abid"
+                            designation="Business Developer"
                         />
                     </Slider>
                 </div>

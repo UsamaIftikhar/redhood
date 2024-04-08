@@ -9,6 +9,8 @@ import Pricing from "../Components/pricing";
 import Testimonials from "../Components/testimonials";
 import Blogs from "../Components/blogs";
 import Contact from "../Components/contact";
+import WorkFlow from "../Components/services/work_flow";
+import TestimonialsNew from "../Components/testimonials/testimonialsNew"
 
 export default function Home() {
     return (
@@ -18,6 +20,8 @@ export default function Home() {
             <About/>
             <ProjectsInfo/>
             <Portfolios/>
+            <WorkFlow/>
+            <TestimonialsNew/>
             <Testimonials/>
             <Contact/>
       </Layout>
