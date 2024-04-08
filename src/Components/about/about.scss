@@ -320,3 +320,12 @@
 		}
 	}
 }
+
+.img-fluid {
+  transition: filter 3s ease, transform 0.5s ease; /* Add the transition effect */
+}
+
+.hovered {
+  filter: grayscale(100%); /* Apply grayscale filter on hover */
+  transform: scale(1.01); /* Apply scale transformation on hover */
+}

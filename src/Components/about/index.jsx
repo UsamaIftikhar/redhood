@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import aboutImg from "../../images/about.png";
+import aboutImgDuplicate from "../../images/about-duplicate.png";
 import { Link } from "react-router-dom";
 import "./about.scss";
 import awardImg from "../../images/award.png";
@@ -18,13 +19,19 @@ export default function Index() {
     const handleLinkedInClick = () => {
         window.open('https://www.linkedin.com/in/usama-iftikhar-ahmad/', '_blank'); // Open the LinkedIn profile in a new tab
     };
+
+    const [hovered, setHovered] = useState(false);
+
+    const handleHover = () => {
+      setHovered(!hovered);
+    };
     return (
         <section className="deneb_about about_v1">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5">
                         <div className="deneb_img_box wow fadeInLeft">
-                            <img src={aboutImg} className="img-fluid" alt="about" />
+                            <img src={hovered ? aboutImgDuplicate : aboutImg} onMouseEnter={handleHover} onMouseLeave={handleHover} className={`img-fluid ${hovered ? 'hovered' : ''}`} alt="about" />
                             <div className='d-flex flex-column align-items-center mt-1'>
                                 <div className='d-flex align-items-center'>
                                     <h3>Usama Iftikhar</h3>
